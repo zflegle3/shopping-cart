@@ -12,6 +12,7 @@ import './styles/App.css';
 import Home from "./components/Home.js";
 import Shop from "./components/Shop.js";
 import Cart from "./components/Cart.js";
+import Checkout from "./components/Checkout.js";
 import inventory from "./inventory.js"
 
 function App() {
@@ -101,6 +102,7 @@ function App() {
 
   useEffect(() => {
     console.log(cartQty);
+    console.log(cartQty);
     sumCart();
   });
 
@@ -154,6 +156,7 @@ function App() {
             <Route exact path="/" element={<Home/>}/>
             <Route exact path="/shop" element={<Shop addToCart={addToCart} itemsAll={shopItemsAll}/>}/>
             <Route exact path="/cart" element={<Cart cartSum={cartSum} updateCart={updateCart} cartItemsAll={cartItemsAll}/>}/>
+            <Route exact path="/checkout" element={<Checkout />}/>
           </Routes>
         </div>
       </Router>

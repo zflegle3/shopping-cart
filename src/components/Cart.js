@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from "react-router-dom";
 import CartItem from "./CartItem.js";
 import "../styles/Cart.css";
 
@@ -20,7 +21,11 @@ function Cart(props) {
                 </div>
                 <div className="cart-total">
                     <p>Subtotal:${props.cartSum}</p>
-                    <button>Checkout</button>
+                    <Link to="/checkout" className="checkout-btn">
+                        <div>
+                            <p>Checkout</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
         );
@@ -32,7 +37,11 @@ function Cart(props) {
                 </div>
                 <div className="cart-total">
                     <p>Subtotal:${props.cartSum}</p>
-                    <button>Checkout</button>
+                    <Link to="" className="checkout-btn">
+                        <div>
+                            <p>Checkout</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
         );
