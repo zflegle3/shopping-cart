@@ -1,0 +1,46 @@
+.home-content {
+    height: 90vh;
+    width: 100vw;
+    background-color: var(--main-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-shop-link {
+    background-color: var(--bckgnd-main);
+    color: var(--main-light);
+    border-radius: 1rem;
+
+
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* margin: 1rem 1rem 1rem 1rem; */
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.home-shop-link:hover {
+    color: var(--sub-dark);
+}
+
+.home-shop-link:hover div {
+    border: solid 2px var(--sub-dark);
+}
+
+.home-shop-link div {
+    height: 100%;
+    width: 100%;
+    border-radius: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-shop-link div p {
+    font-size: 3rem;
+    white-space: nowrap;
+}
